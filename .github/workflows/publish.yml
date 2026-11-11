@@ -44,10 +44,10 @@ jobs:
         run: python generate.py
 
       - name: Upload calendar
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: site
 
       - name: Publish calendar
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
